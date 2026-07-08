@@ -22,7 +22,13 @@ const Register = () => {
             })
 
                 .then(data=>{
-                    alert(data.message)
+                    alert("Registration Succesful")
+                    setfullname("")
+                    setemail("")
+                    setpassword("")
+                    setavatar("")
+                    setrole("")
+                    setgender("")
                 })
 
         } catch (error) {
@@ -32,7 +38,7 @@ const Register = () => {
 
   return (
     <>
-      <form onSubmit={register(e)}>
+      <form onSubmit={register}>
         <input value={fullname} onChange={(e)=>{setfullname(e.target.value)}}
         type="text" placeholder='fullname'/>
         <input value={email} onChange={(e)=>{setemail(e.target.value)}}

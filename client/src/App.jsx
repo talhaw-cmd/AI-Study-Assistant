@@ -1,9 +1,14 @@
 import React from 'react'
-import Home from './pages/public/Home'
+import Register from './pages/public/Register'
+import { Route, Routes } from 'react-router-dom'
+
 const App = () => {
   return (
     <>
-      <Register/>
+      <Routes>
+        <Route path="/Register" element={<Register/>}/>
+        {/* <Route path="/Login" element={<Register/>}/> */}
+      </Routes>
     </>
   )
 }

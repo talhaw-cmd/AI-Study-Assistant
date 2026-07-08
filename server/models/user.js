@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 let userSchema = mongoose.Schema({
-    fullName: {
+    fullname: {
         type: String,
         required: true,
         trim: true
@@ -26,8 +26,7 @@ let userSchema = mongoose.Schema({
     },
 
     avatar: {
-        public_id: String,
-        url: String
+        type: String
     },
 
     gender: {
